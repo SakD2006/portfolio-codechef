@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma:wght@400&display=swap">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="coin">
+                <span>S</span>
+            </div>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-container">
+        <h1 class="contact-title">Contact Me</h1>
+
+        <div class="contact-details">
+            <p>Email: <a href="mailto:sakshamddubey@icloud.com">sakshamddubey@icloud.com</a></p>
+            
+            <p>Discord: <span id="discord">saksy999</span> 
+                <button onclick="copyDiscord()">Copy</button>
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saksham-dubey-604983261/" target="_blank"><img src="icons/linked.webp" alt="LinkedIn"></a>
+            <a href="https://github.com/SakD2006" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            <a href="https://www.hackerrank.com/profile/sakshamddubey" target="_blank"><img src="icons/hackerrank.webp" alt="HackerRank"></a>
+            <a href="https://www.instagram.com/sakshamdubey_19" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        </div>
+
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        function copyDiscord() {
+            const discordText = document.getElementById("discord").innerText;
+            navigator.clipboard.writeText(discordText);
+            alert("Discord username copied!");
+        }
+    </script>
+
+</body>
+</html>

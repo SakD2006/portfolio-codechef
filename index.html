@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma:wght@400&display=swap" />
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="coin">
+                <span>S</span>
+            </div>
+        </div>
+        
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saksham-dubey-604983261/" target="_blank">
+                <img src="icons/linked.webp" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/SakD2006" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            <a href="https://www.hackerrank.com/profile/sakshamddubey" target="_blank"><img src="icons/hackerrank.webp" alt="HackerRank"></a>
+            <a href="https://www.instagram.com/sakshamdubey_19" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="about-saksham">
+            <p class="about">ABOUT</p>
+            <p class="about">SAKSHAM</p>
+            
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <img src="/images/avatar.png" alt="Saksham" class="profile-img">
+            <p>Hello! I'm Saksham, I like coding and programming and working on projects, I made this website with the help of open online resources.
+                You may check the About, Projects, Contact pages.
+            </p>
+        </div>
+    </section>
+
+    <script> //lower about content fade in animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutContent = document.querySelector(".about-content");
+    
+            window.addEventListener("scroll", function () {
+                let scrollPosition = window.scrollY;
+                let aboutSection = aboutContent.offsetTop;
+    
+                if (scrollPosition > aboutSection - window.innerHeight / 1.2) {
+                    aboutContent.classList.add("show");
+                }
+            });
+        });
+        </script>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KEY.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

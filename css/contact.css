@@ -1,0 +1,166 @@
+body {
+    font-family: 'Michroma', sans-serif;
+    background-color: #162921;
+    color: #fff;
+    text-align: center;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 7px,
+        rgba(0, 0, 0, 0.8) 9px,
+        rgba(0, 0, 0, 0.8) 13px,
+        transparent 13px
+    );
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: black;
+    border-bottom: 2px solid #8fff00;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-container a:hover {
+    color: #8fff00;
+}
+
+.contact-container {
+    margin-top: 50px;
+}
+
+.contact-details p {
+    font-size: 1.2em;
+}
+
+.contact-details a {
+    color: #8fff00;
+    text-decoration: none;
+}
+
+.contact-details button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #8fff00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-details button:hover {
+    background: #6aff00;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;  /* Centers the icons horizontally */
+    gap: 20px;  /* Adds spacing between icons */
+    margin-top: 20px;  /* Adds spacing from the text above */
+    margin-bottom: 20px;  /* Adds spacing from the form below */
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #8fff00;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 40px auto;
+    box-shadow: 0px 0px 15px #8fff00;
+}
+
+.contact-form h2 {
+    color: #8fff00;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background: #8fff00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #6aff00;
+}
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fade-in effect to Contact Me title */
+.contact-title {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Apply fade-in to Email and Discord */
+.contact-details {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Apply fade-in to Social Media Links */
+.social-links {
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+/* Apply fade-in to Contact Form */
+.contact-form {
+    animation: fadeInUp 1.6s ease-in-out;
+}
+
